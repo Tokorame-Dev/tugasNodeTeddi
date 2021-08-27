@@ -16,7 +16,7 @@ const {
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.send('Hello Teddi Wellcome to NodeJs')
+    res.send("Hello Teddi Wellcome to NodeJs")
 })
 
 app.get('/test', (req, res) => {
