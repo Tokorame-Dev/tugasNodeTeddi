@@ -3,7 +3,7 @@ const app = express()
 const port = 8000
 
 const {
-    test, 
+    test,
     readBook,
     addBook,
     deleteBook,
@@ -12,7 +12,7 @@ const {
     addBookData,
     renameBookData,
     deleteBookData
-} = require('./data');
+} = require('./controller');
 app.use(express.json());
 
 app.get('/', (req, res) => {
@@ -29,7 +29,7 @@ app.get('/dataBook', (req, res) => {
 })
 
 // add file
-app.get('/addBook',(req, res) => {
+app.get('/addBook', (req, res) => {
     res.send(addBook(req.body.name))
 })
 
